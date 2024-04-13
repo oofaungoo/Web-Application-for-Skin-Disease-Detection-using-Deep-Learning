@@ -1,0 +1,27 @@
+.holder {
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+}
+
+.home-content {
+    min-height: 635px;
+    background: url('../../images_anim/home_face_2.jpg') center no-repeat;
+    flex-direction: column;
+}
+
+.home-button {
+    font-family: inherit;
+    background-color: var(--yellow-color);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 570px;
+}
+
+.home-button:hover {
+    background-color: var(--orange-color);
+}

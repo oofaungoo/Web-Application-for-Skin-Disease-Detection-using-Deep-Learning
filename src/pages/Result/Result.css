@@ -1,0 +1,45 @@
+.result-end-button {
+    font-family: inherit;
+    background-color: var(--white-color);
+    border: 2px solid var(--yellow-color); /* Set border width and color */
+    padding: 8px 26px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.result-again-button {
+    font-family: inherit;
+    background-color: var(--yellow-color);
+    border: none;
+    padding: 8px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.result-again-button:hover {
+    background-color: var(--orange-color);
+}
+
+.result-show {
+    min-height: 462px;
+    max-width: 347px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.disease-info-container {
+    max-width: 370px;
+    word-wrap: break-word;
+}
+
+.title-container {
+    background-color: var(--yellow-color);
+    max-width: 347px;
+    word-wrap: break-word;
+}
+

@@ -1,0 +1,37 @@
+.upload-button {
+    margin-left: 44px;
+    font-family: inherit;
+    background-color: var(--yellow-color);
+    border: none;
+    padding: 8px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+    background-color: var(--orange-color);
+}
+
+.upload-show {
+    min-height: 462px;
+    max-width: 347px;
+    background: url('../../images_anim/upload_bg.png') no-repeat;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-disable-button {
+    margin-left: 38px;
+    font-family: inherit;
+    background-color: var(--light-grey-color);
+    border: none;
+    padding: 8px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
