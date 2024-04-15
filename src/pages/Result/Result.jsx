@@ -3,11 +3,11 @@ import "./Result.css";
 import { Link } from "react-router-dom";
 import lemon from '../../images_anim/icon_lemon.png'
 import sparkle from '../../images_anim/icon_sparkl.png'
+import TEST from '../../python/uploads/TEST.jpg'
 
 const Result = () => {
-
   // Diseases data array
-  const diseasesData = [
+    const diseasesData = [
     { name: "สิว (Acne)", careInstructions: "ทำความสะอาดผิวของคุณเป็นประจำ และใช้ผลิตภัณฑ์ที่มีกรดซาลิไซลิก (Salicylic Acid) หรือเบนโซอิลเปอร์ออกไซด์ (Benzoyl Peroxide)" },
     { name: "ผื่นแอคตินิค เคราโตซิล (Actinic Carcinoma)", careInstructions: "หลีกเลี่ยงการโดนแสงแดดโดยตรง หมั่นทาครีมกันแดดเพื่อปกป้องผิวของคุณจากรังสียูวี และปฏิบัติตามการรักษาที่แพทย์ของคุณกำหนด ซึ่งอาจต้องใช้ยาในกลุ่มยาเคมีบำบัดสูตร 5FU (Fluorouracil) หรือเจลไดโคลฟีแนค (Diclofenac) หรือครีมอิมิควิโมด (Imiquimod) ขึ้นกับความรุนแรง" },
     { name: "โรคผื่นภูมิแพ้ผิวหนัง (Atopic Dermatitis)", careInstructions: "ใช้มอยเจอร์ไรเซอร์เป็นประจำ และหลีกเลี่ยงสิ่งกระตุ้น เช่น ผ้าหรือสบู่บางชนิด" },
@@ -54,7 +54,7 @@ const Result = () => {
 
                 {/* เอา output จาก Pyton มาโชว์หน้านี้ */}
                 <div className='upload-show' style={{
-                    backgroundImage: `none`,
+                    backgroundImage: TEST,
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
@@ -62,7 +62,6 @@ const Result = () => {
                     height: '462px',
                     marginBottom: '30px'
                 }}></div>
-
 
                 {showData && selectedDisease && (
                     <>
@@ -113,9 +112,6 @@ const Result = () => {
                     ปิด
                 </Link>
             </div>
-            
-
-
 
         </div>
     </div>

@@ -13,7 +13,7 @@ const Upload = () => {
   const handleImageChange = (e) => {
     const selectedImage = e.target.files[0];
     setImage(selectedImage);
-    setPreviewURL(URL.createObjectURL(selectedImage)); // Create a URL for preview
+    setPreviewURL(URL.createObjectURL(selectedImage));
   };
 
   // ส่งไปให้ Python
@@ -22,7 +22,7 @@ const Upload = () => {
     formData.append('picture', image);
   
     // Send the image to the Python backend
-    axios.post('http://localhost:8000/upload/', formData)
+    axios.post('http://localhost:5000/upload/', formData)
       .then(response => {
         console.log('Image uploaded:', response.data.image_url);
         // Handle success, such as displaying the uploaded image
@@ -42,9 +42,7 @@ const Upload = () => {
               &lt; ย้อนกลับ
             </div>
           </Link>
-        
-  
-
+          
         {/* ปุ่มอัปโหลดภาพ */}
         <label htmlFor="file-upload" className='upload-button fs-20 fw-5' style={{ marginTop: '20px', marginBottom: '18px'}} onClick={handleImageUpload}>
           <img src={upload} alt='Q-icon' style={{ marginRight: '10px', width: '20px', display: 'inline-block', verticalAlign: 'middle' }} />
@@ -82,7 +80,7 @@ const Upload = () => {
   
         {/* ปุ่มวิเคราะห์ผิว ถ้ายังไม่มีภาพ จะเป็นปุ่ม disable แบบกดไม่ได้ */}   
         {previewURL ? (
-          <Link to="/wait" className='home-button fs-20 fw-5' style={{ marginTop: '10px', marginLeft: '56px' }}>
+          <Link to="/wait" className='home-button fs-20 fw-5' style={{ marginTop: '10px', marginLeft: '56px' }} onClick={handleImageUpload}>
             เริ่มวิเคราะห์เลย
             <img src={sparkle} alt='Q-icon' style={{ marginLeft: '10px', backgroundSize: 'contain', width: '32px', display: 'inline-block', verticalAlign: 'middle' }} />
           </Link>
