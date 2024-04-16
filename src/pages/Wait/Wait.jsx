@@ -29,7 +29,7 @@ const Wait = () => {
 
         const timeoutId = setTimeout(() => {
             navigate('/result');
-        }, 10000); // 10 seconds delay for navigation
+        }, 3000); // 15 seconds delay for navigation
 
         return () => {
             clearInterval(intervalId);
